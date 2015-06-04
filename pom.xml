@@ -2,18 +2,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <name>i18nCloud Maven Webapp</name>
-    <url>http://maven.apache.org</url>
+    <name>primefaces-spring-hibernate-hsql</name>
+    <url>https://github.com/eruvanos/primefaces-spring-hibernate-hsql</url>
 
     <groupId>vwg.hr</groupId>
-    <artifactId>i18nCloud</artifactId>
+    <artifactId>primefaces-spring-hibernate-hsql</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <packaging>war</packaging>
 
 
     <build>
-        <finalName>i18nCloud</finalName>
+        <finalName>primefaces-spring-hibernate-hsql</finalName>
     </build>
 
     <dependencies>
