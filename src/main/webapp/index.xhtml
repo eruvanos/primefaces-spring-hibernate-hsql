@@ -5,20 +5,23 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
-<f:view>
-    <h:form>
+<h:head></h:head>
+<h:body>
+    <f:view>
+        <h:form>
+            <p:dataTable var="example" value="#{exampleBean.allExamples}"
+                         emptyMessage="Nothing to see in a dark world.">
+                <p:column headerText="ID">
+                    <h:outputText value="#{example.id}"/>
+                </p:column>
+                <p:column headerText="Name">
+                    <h:outputText value="#{example.name}"/>
+                </p:column>
+            </p:dataTable>
 
-        <p:dataTable var="example" value="#{exampleBean.allExamples}" emptyMessage="Nothing to see in a dark world.">
-            <p:column headerText="ID">
-                <h:outputText value="#{example.id}"/>
-            </p:column>
-            <p:column headerText="Name">
-                <h:outputText value="#{example.name}"/>
-            </p:column>
-        </p:dataTable>
-
-        <br/>
-        <h:commandButton action="#{exampleBean.createRandom()}" value="Create Random"/>
-    </h:form>
-</f:view>
+            <br/>
+            <h:commandButton action="#{exampleBean.createRandom()}" value="Create Random"/>
+        </h:form>
+    </f:view>
+</h:body>
 </html>
