@@ -17,7 +17,7 @@
     </build>
 
     <properties>
-        <org.springframework.version>4.3.22.RELEASE</org.springframework.version>
+        <org.springframework.version>6.0.0</org.springframework.version>
     </properties>
 
     <dependencies>
